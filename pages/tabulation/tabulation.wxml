@@ -34,12 +34,14 @@
      <text class='seller_text'>推荐商家</text>
   </view> 
   <view class='boxer'>
-      <view class='boxs' wx:for="{{show}}" wx:key="index">
+      <view class='boxs' wx:for="{{show}}" wx:key="index" >
+          <view bindtap='merchtz' data-merchtype="{{item.merchtype}}" data-merchid="{{item.id}}" >
       <image src="{{item.logo}}" class='imger' ></image>
         <view class='mober'>
           <view class='item' >{{item.merchname}}</view>
           <view class='item' >分类：{{item.catename}}</view>
         </view>
+          </view>
         <navigator url='/pages/map/map?id={{item.id}}'>
         <view class='item_vie'>
           <image class='item_dis' src="../img/paa.jpg"></image>

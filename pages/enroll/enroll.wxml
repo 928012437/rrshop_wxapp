@@ -12,6 +12,16 @@
         </view>
       </view>
       <view class='vertical'>
+        <text class='name'>商户类型</text> 
+        <text class='dis'>*</text>
+        <radio-group class="radio-group" bindchange="merchtypeinput">
+        <label class="radio" >
+          <radio value='1' >点餐</radio>
+          <radio value='0' >普通</radio>
+        </label>
+        </radio-group>
+      </view>
+      <view class='vertical'>
         <text class='name'>主营项目：</text> 
         <text class='dis'>*</text>
         <view  class='inpt'>

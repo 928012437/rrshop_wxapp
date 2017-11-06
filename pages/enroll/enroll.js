@@ -14,6 +14,7 @@ Page({
     realname:'',
     mobile:'',
     merchname:'',
+    merchtype:'',
     salecate:'',
     desc:''
   },
@@ -34,6 +35,11 @@ Page({
   merchnameinput: function (e) {
     this.setData({
       merchname: e.detail.value
+    })
+  },
+  merchtypeinput: function (e) {
+    this.setData({
+      merchtype: e.detail.value
     })
   },
   salecateinput: function (e) {
@@ -122,6 +128,7 @@ Page({
       realname: this.data.realname,
       mobile: this.data.mobile,
       merchname: this.data.merchname,
+      merchtype: this.data.merchtype,
       salecate: this.data.salecate,
       desc: this.data.desc
     };

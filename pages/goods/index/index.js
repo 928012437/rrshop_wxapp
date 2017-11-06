@@ -40,7 +40,7 @@ Page({
   },
   onLoad: function (t) {
     if (!e.isEmptyObject(t)) {
-      var a = t.isrecommand || t.isnew || t.ishot || t.isdiscount || t.issendfree || t.istime ? 1 : 0;
+      var a = t.isrecommand || t.isnew || t.ishot || t.isdiscount || t.issendfree || t.istime || t.merchid233 ? 1 : 0;
       this.setData({
         params: t,
         isfilter: a,
@@ -78,6 +78,7 @@ Page({
     }),
       t.data.params.page = t.data.page,
       a.get("goods/get_list", t.data.params, function (a) {
+        // console.log(a);return
         var e = {
           loading: false,
           total: a.total

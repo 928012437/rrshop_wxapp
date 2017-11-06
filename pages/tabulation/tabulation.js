@@ -7,14 +7,7 @@ function initSubMenuDisplay() {
 Page({
   data: {
     subMenuDisplay: initSubMenuDisplay(),
-    show:[
-      {
-        name:"啥啥啥公司",
-        dis:"188888888",
-        app:"../img/paa.jpg",
-        id:"/pages/map/map"
-      }
-    ],
+    show:[],
     category:[],
     range: 500,
     cateid: 0,
@@ -22,6 +15,19 @@ Page({
     text1:'附近',
     text2: '分类',
     text3: '智能排序',
+  },
+  merchtz:function(e){
+    var merchtype = e.currentTarget.dataset.merchtype;
+    var merchid = e.currentTarget.dataset.merchid;
+    if (merchtype==0){
+      wx.navigateTo({
+        url: '/pages/goods/index/index?merchid233=' + merchid
+      })
+    }else{
+      wx.navigateTo({
+        url: '/pages/food/food?merchid=' + merchid
+      })
+    }
   },
   onShow:function(){
     this.getcategory()
