@@ -1,4 +1,4 @@
-<view class="index">
+ <view class="index">
     <view class="cart-tab-wrp">
       <view class="cart-item-total cart-tab-item">
         <view class="cart-item-icon-wrp">
@@ -11,9 +11,9 @@
         <navigator url="" bindtap="createorder" class="cart-tab-item-btn" hover-class="navigator-hover">选好了</navigator>
       </view>
     </view>
+    
     <view class="menu-wrp">
         <scroll-view scroll-y="true" class="left-side">
-            <!--菜单列表-->
             <block wx:for="{{menus}}"  wx:key="id" wx:for-item="menu">
                 <view class="menu-item" data-id="{{menu.id}}" data-tag="{{menu.tag}}" bindtap="selectMenu">
                     <view class="menu-item-wrp">
@@ -75,4 +75,4 @@
             <view class="dish-footer"></view>
         </scroll-view>
     </view>
-</view>
+</view> 

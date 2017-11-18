@@ -309,6 +309,7 @@ Page({
       e.get("goods/get_picker", {
         id: a.data.goods.id
       }, function (t) {
+        console.log(t)
         n > 0 && (d = t.options, a.setData({
           pickerOption: t
         })),

@@ -78,6 +78,8 @@ Page({
     }else{
       cartdata.push(cartgood)
     }
+
+    console.log(cartgood)
     this.setData({
       'cartdata': cartdata
     })

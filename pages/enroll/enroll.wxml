@@ -61,7 +61,7 @@
 
 <view class='coser'>
   <view class="page-body">
-    <checkbox class='checkbox' value="" checked="{{checked}}"></checkbox>
+    <checkbox class='checkbox' value="" bindtap='forcheck' checked="{{checked}}"></checkbox>
     <text class='texts' bindtap='forcheck' >我已经阅读并了解了</text>
     <text class='teter' bindtap='powerDrawer' data-statu="open">【入驻申请协议】</text>
   </view>

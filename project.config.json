@@ -1,0 +1,53 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": false,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.6",
+	"appid": "wxb882ce7e23135d4a",
+	"projectname": "%E4%BA%BA%E4%BA%BA%E5%95%86%E5%9F%8E",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "入驻",
+					"pathName": "pages/enroll/enroll",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "列表",
+					"pathName": "pages/tabulation/tabulation",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "点餐",
+					"pathName": "pages/food/food",
+					"query": "merchid=3"
+				},
+				{
+					"id": 3,
+					"name": "商品",
+					"pathName": "pages/goods/detail/index",
+					"query": "id=902"
+				}
+			]
+		}
+	}
+}

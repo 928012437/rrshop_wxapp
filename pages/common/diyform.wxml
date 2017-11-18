@@ -6,7 +6,8 @@
         <input class="fui-input" bindinput="DiyFormHandler" data-field="{{field.diy_type}}" data-type="input" placeholder="{{field.placeholder}}" value="{{diyform.f_data[field.diy_type]}}" wx:if="{{field.data_type == 0}}" />
         <textarea bindinput="DiyFormHandler" data-field="{{field.diy_type}}" placeholder="{{field.placeholder}}" value="{{diyform.f_data[field.diy_type]}}" data-type="textarea" wx:if="{{field.data_type == 1}}"></textarea>
         <picker data-type="picker" bindchange="DiyFormHandler" data-field="{{field.diy_type}}" range="{{field.tp_text}}" value="{{diyform.f_data[field.diy_type][0]}}" wx:if="{{field.data_type == 2}}">
-          <view class="picker">{{diyform.f_data[field.diy_type][1]}}</view>
+          <!-- <view class="picker">{{diyform.f_data[field.diy_type][1]}}</view> -->
+          <view >{{diyform.f_data[field.diy_type][1]}}</view>
         </picker>
         <checkbox-group bindchange="DiyFormHandler" data-field="{{field.diy_type}}" data-type="checkbox" wx:if="{{field.data_type == 3}}">
           <block wx:for="{{field.tp_text}}">

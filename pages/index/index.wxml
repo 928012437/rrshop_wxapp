@@ -1,4 +1,5 @@
 <loading hidden="{{show}}">正在加载</loading>
+
 <view class="page" wx:if="{{show}}">
   <block wx:for="{{shop.sorts}}">
     <include src="adv.wxml" wx:if="{{item.type == 'adv'}}" />
@@ -10,6 +11,7 @@
     <include src="recommand.wxml" wx:if="{{item.type == 'recommand'}}" />
   </block>
 
+    <!-- <video src='http://www.w3school.com.cn/i/movie.mp4'></video> -->
   <view id="recommand" wx:if="{{storeRecommand}}">
     <view class="fui-line" style="background: #f4f4f4;">
       <view class="text text-danger">店铺推荐</view>
